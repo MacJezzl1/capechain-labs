@@ -34,10 +34,10 @@ Official digital headquarters for **CapeChain Labs** — an international techno
 
 ## Tech Stack
 
-* **Framework:** [React 19](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
-* **Build Tool:** [Vite 8](https://vite.dev/)
+* **Framework:** [Next.js 16 (App Router)](https://nextjs.org/) + [React 19](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
 * **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
 * **3D Graphics:** [Three.js](https://threejs.org/) + [@react-three/fiber](https://r3f.docs.pmnd.rs/) + [@react-three/drei](https://github.com/pmndrs/drei)
+* **Animation:** [Motion](https://motion.dev/)
 * **Icons:** [Lucide React](https://lucide.dev/)
 * **Deployment:** [Vercel](https://vercel.com/)
 
@@ -55,8 +55,8 @@ pnpm dev
 # Build for production
 pnpm build
 
-# Preview production build locally
-pnpm preview
+# Start production server
+pnpm start
 ```
 
 ---
