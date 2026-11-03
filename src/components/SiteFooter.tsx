@@ -30,12 +30,30 @@ export function SiteFooter() {
         </div>
         <div>
           <p className="mb-4 text-[10px] uppercase tracking-[0.24em] text-zinc-600">Connect</p>
-          <Link href="/contact" className="inline-flex items-center gap-2 text-sm text-white">
-            Begin a conversation <ArrowUpRight size={15} />
-          </Link>
-          <p className="mt-5 text-xs leading-5 text-zinc-600">
-            Official social links will be activated once verified URLs are configured.
-          </p>
+          <div className="flex flex-col gap-3">
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 text-sm font-medium text-white transition hover:text-cyan-300"
+            >
+              Begin a conversation <ArrowUpRight size={15} />
+            </Link>
+            <a
+              href="https://www.linkedin.com/company/capechain-labs"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 text-sm text-zinc-400 transition hover:text-white"
+            >
+              LinkedIn <ArrowUpRight size={14} className="text-zinc-600" />
+            </a>
+            <a
+              href="https://github.com/MacJezzl1"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 text-sm text-zinc-400 transition hover:text-white"
+            >
+              GitHub <ArrowUpRight size={14} className="text-zinc-600" />
+            </a>
+          </div>
         </div>
       </div>
       <div className="mx-auto mt-14 flex max-w-7xl flex-col gap-3 border-t border-white/10 pt-6 text-xs text-zinc-600 sm:flex-row sm:items-center sm:justify-between">
@@ -43,6 +61,7 @@ export function SiteFooter() {
         <div className="flex gap-5">
           <Link href="/privacy">Privacy</Link>
           <Link href="/terms">Terms</Link>
+          <Link href="/admin/inquiries">Console</Link>
           <a href="#root">Back to top</a>
         </div>
       </div>

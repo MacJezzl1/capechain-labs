@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { ArrowUpRight } from 'lucide-react'
 import { PageHero } from '@/components/PageHero'
 import { InquiryForm } from '@/components/InquiryForm'
 
@@ -34,10 +35,38 @@ export default function ContactPage() {
                 </li>
               ))}
             </ol>
-            <p className="mt-8 text-sm leading-6 text-zinc-500">
-              Official email, office and social contact details will appear only after they are
-              verified and configured.
-            </p>
+            <div className="mt-10 rounded-2xl border border-white/10 bg-white/[0.02] p-6">
+              <p className="text-[10px] uppercase tracking-[0.22em] text-zinc-500">
+                Official Channels
+              </p>
+              <div className="mt-4 flex flex-col gap-3">
+                <a
+                  href="https://www.linkedin.com/company/capechain-labs"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group inline-flex items-center justify-between text-sm text-zinc-300 transition hover:text-cyan-300"
+                >
+                  <span className="font-medium text-white group-hover:text-cyan-300">
+                    LinkedIn / CapeChain Labs
+                  </span>
+                  <ArrowUpRight size={15} className="text-zinc-600 group-hover:text-cyan-300" />
+                </a>
+                <a
+                  href="https://github.com/MacJezzl1"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group inline-flex items-center justify-between text-sm text-zinc-300 transition hover:text-cyan-300"
+                >
+                  <span className="text-zinc-400 group-hover:text-white">
+                    GitHub / MacJezzl1
+                  </span>
+                  <ArrowUpRight size={15} className="text-zinc-600 group-hover:text-white" />
+                </a>
+              </div>
+              <p className="mt-5 border-t border-white/10 pt-4 text-xs leading-5 text-zinc-500">
+                Inquiries are triaged directly by our engineering leads within 24–48 hours.
+              </p>
+            </div>
           </div>
           <InquiryForm />
         </div>

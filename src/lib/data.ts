@@ -356,7 +356,7 @@ export const COMPANY_DATA: Company = {
   name: 'CapeChain Labs',
   positioning: 'CapeChain Labs is where ambitious ideas become intelligent technology.',
   githubProfile: 'https://github.com/MacJezzl1',
-  linkedinUrl: 'https://linkedin.com/company/capechainlabs',
+  linkedinUrl: 'https://www.linkedin.com/company/capechain-labs',
   xUrl: 'https://x.com/capechainlabs',
   instagramUrl: 'https://instagram.com/capechainlabs',
 }
